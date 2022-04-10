@@ -50,7 +50,7 @@ cv2. destroyAllWindows()
 
 # iii)Convert RGB and BGR to YCrCb
 import cv2
-sun_color_image = cv2.imread('image.jpg')
+sun_color_image = cv2.imread('exp3pic.jpg')
 cv2.imshow('Original image', sun_color_image)
 gray_image1 = cv2.cvtColor (sun_color_image, cv2.COLOR_RGB2YCrCb)
 cv2.imshow('RGB2YCrCb', gray_image1)
@@ -64,7 +64,7 @@ cv2. destroyAllWindows()
 
 # iv)Split and Merge RGB Image
 import cv2
-image = cv2.imread('image.jpg')
+image = cv2.imread('exp3pic.jpg')
 blue=image[:,:,0]
 green=image[:,:,1]
 red=image[:,:,2]
@@ -81,7 +81,7 @@ cv2.destoryAllWindows()
 
 # v) Split and merge HSV Image
 import cv2
-image = cv2.imread('image.jpg')
+image = cv2.imread('exp3pic.jpg')
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 h,s,v = cv2.split(hsv)
 cv2.imshow('Hue-Image',h)
